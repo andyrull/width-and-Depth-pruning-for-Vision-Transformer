@@ -1,12 +1,9 @@
 # Width and Depth Pruning for Vision Transformers
-
-The code is built on top of Movement Pruning.
-
-This repository contains PyTorch implementation for Width and Depth Pruning for Vision Transformers.
+This is the official implementation of the AAAI 2022 paper [Width and Depth Pruning for Vision Transformers] (https://www.aaai.org/AAAI22Papers/AAAI-2102.FangYu.pdf)
 
 
 
-## Usage
+## Installation
 
 ### Requirements
 
@@ -40,7 +37,7 @@ Model preparation: download pre-trained DeiT models for pruning:
 sh download_pretrain.sh
 ```
 
-### Demo
+## Demo
 
 ### Training on ImageNet
 
@@ -81,3 +78,18 @@ Test the amout of parameters, CPU latency of pruned transformer.
 python masked_parameter_count.py --arch deit_base --pretrained_dir logs/checkpoint.pth --no_cuda --eval_batch_size 1  --classifiers 10
 ```
 
+## Acknowledgement
+Our code is built on top of Movement Pruning.
+
+
+## Citing
+If you find these useful for your research or project, feel free to cite our paper.
+```
+@inproceedings{yu2022width,
+  title={Width \& Depth Pruning for Vision Transformers},
+  author={Yu, Fang and Huang, Kun and Wang, Meng and Cheng, Yuan and Chu, Wei and Cui, Li},
+  booktitle={AAAI Conference on Artificial Intelligence (AAAI)},
+  volume={2022},
+  year={2022}
+}
+```
