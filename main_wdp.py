@@ -23,7 +23,7 @@ from losses import LossWithClassifierAndPruning
 from samplers import RASampler
 
 import utils
-from vit_wdpruning import VisionTransformerWithWDPruning,_cfg, checkpoint_filter_fn
+from vit_wdp import VisionTransformerWithWDP,_cfg, checkpoint_filter_fn
 import math
 from torch.utils.tensorboard import SummaryWriter
 from torch.optim import Adam
